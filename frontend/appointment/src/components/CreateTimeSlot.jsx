@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+im;
 
 const CreateTimeSlot = () => {
+  const [startTime, setStartTime] = useState("");
+  const [endTime, setEndTime] = useState("");
+
+  const handleCreateTimeSlot = () => {
+    const data = {
+      startTime,
+      endTime,
+    };
+    axios.post("http://localhost:5000/createtimeslot", data);
+  };
+
   return (
     <div>
       <h1>Create Time Slot</h1>
