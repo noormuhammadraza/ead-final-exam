@@ -1,15 +1,15 @@
 import React from "react";
 
-const CreateTimeSlot = () => {
+const BookTimeSlot = () => {
   return (
     <div>
-      <h1>Create Time Slot</h1>
+      <h1>Book Time Slot</h1>
       <label htmlFor="start-time">
-        <h3>Start Time</h3>
+        <h3>Name</h3>
       </label>
       <input id="start-time" type="text" />
       <label htmlFor="end-time">
-        <h3>End Time</h3>
+        <h3>Email</h3>
       </label>
       <input id="end-time" type="text" />
       <div>
@@ -19,4 +19,4 @@ const CreateTimeSlot = () => {
   );
 };
 
-export default CreateTimeSlot;
+export default BookTimeSlot;
